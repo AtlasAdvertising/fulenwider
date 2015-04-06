@@ -1,0 +1,50 @@
+// Header
+
+header {
+  height: 75px;
+  background: $header-blue;
+  @include breakpoint(medium) {
+  	height: 95px;
+  }
+  .row {
+  	height: 95px;
+  }
+  .col-xs-4,
+  .col-sm-8 {
+  	-webkit-align-items: center;
+  	-ms-align-items: center;
+	  align-items: center;
+	  display: -ms-flexbox;  /* TWEENER - IE 10 */
+	  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	  display: flex;
+		height: 100%;
+  }
+  .col-sm-8 {
+
+  }
+}
+
+
+// Google Translator 
+img.goog-te-gadget-icon {
+	display: none;
+}
+a.goog-te-menu-value {
+	span {
+		display: none;
+	}
+	&:after {
+		content: url(/LCF/images/flag-usa.png);
+		position: relative;
+		top: 1px;
+	}
+}
+.goog-te-gadget-simple {
+	background-color:transparent !important; 
+	border:0px !important; 
+	margin-top:10px;
+}
+#google_translate_element { 
+  position: absolute;
+  top: -4px;
+}

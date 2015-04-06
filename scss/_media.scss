@@ -1,0 +1,11 @@
+// Media Center
+
+
+// Show More/Less Buttons 
+.show-more.button,
+.show-less.button {
+	@include orange-button;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+}

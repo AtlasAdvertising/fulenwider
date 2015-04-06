@@ -1,0 +1,52 @@
+// Widgets
+
+
+// Headers
+
+#widget-wrapper .widget-block h2,
+#widget-wrapper .SidebarTitle {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	font-weight: 300;
+	margin-top: 20px;
+}
+
+
+// Downloads
+
+#Sidebar_Downloads {
+	.SidebarText {
+		display: none;
+	}
+	.SidebarList ul {
+		@include list;
+		a {
+			color: $orange;
+			&:hover {
+				color: $orange-hover;
+			}
+		}
+		li {
+			display: block;
+			margin: 0px !important;
+			line-height: 18px;
+			padding: 5px 0;
+		}	
+	}
+	.SidebarListIcon {
+		float: left;
+		padding: 3px 10px 3px 0px;
+	}
+	.SidebarListMyFavorites {
+		float: right;
+		padding-right: 5px;
+		width: 26px;
+	}
+}
+
+
+// Photo Callout
+
+#widget-wrapper .local-image a {
+  display: block;
+}

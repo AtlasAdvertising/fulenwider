@@ -1,0 +1,48 @@
+// Footer
+
+
+footer {
+	background: $header-blue;
+	color: $grey;
+	padding: 50px 0;
+	a {
+		color: $light-grey;
+	}
+	h1 {
+		@include footer-header;
+	}
+}
+
+// Sitemap
+
+ul.CMSSiteMapList {
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	ul {
+		display: none;
+	}
+	a {
+		color: $light-grey;
+	}
+}
+
+
+// News
+
+#footer-news-list {
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	.fa-rss {
+		display: none;
+	}
+	a {
+		color: $periwinkle;
+		&:hover {
+			color: $light-grey;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+// Search
+
+
+// Hidden Search Area
+
+#search-bar {
+	display: none;
+	background-color: $header-blue; 
+	height: 40px; 
+	padding: 9px 0; 
+	margin-top: -40px;
+	input#searchbtn { 
+		background: url('/Leduc/images/search.png') no-repeat center center; 
+		outline: 0; 
+		border: none; 
+		width: 22px; 
+		height: 22px; 
+		float: left; 
+		margin-right: 10px; 
+		display: inline-block; 
+	}
+	input#search { 
+		float: left; 
+		outline: none; 
+		border: 0; 
+		background-color: transparent; 
+		color: #fff;
+	}
+	input#search::-webkit-input-placeholder {
+	   color: #fff;
+	   font-family:'Roboto', sans-serif;
+	   font-size: 15px;
+	   text-transform: uppercase;
+	}
+
+	input#search:-moz-placeholder { /* Firefox 18- */
+	   color: #fff;
+	   font-family:'Roboto', sans-serif;
+	   font-size: 15px;
+	   text-transform: uppercase;  
+	}
+
+	input#search::-moz-placeholder {  /* Firefox 19+ */
+	   color: #fff;
+	   font-family:'Roboto', sans-serif;
+	   font-size: 15px;
+	   text-transform: uppercase;  
+	}
+
+	input#search:-ms-input-placeholder {  
+	   color: #fff;
+	   font-family:'Roboto', sans-serif;
+	   font-size: 15px;
+	   text-transform: uppercase;  
+	}
+	.search-close { 
+		float: right; 
+		height: 22px; 
+		cursor: pointer; 
+	}
+}

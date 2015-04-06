@@ -1,0 +1,9 @@
+node_modules/
+gulpfile.js
+package.json
+.sass-cache/
+*.sublime-project
+*.sublime-workspace
+comps/
+*.psd
+images/

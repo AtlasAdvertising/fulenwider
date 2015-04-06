@@ -1,0 +1,132 @@
+// Home
+
+
+// Welcome Area
+
+#webpart-area-1 {
+	padding: 50px 0;
+	.editable-text {
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		padding-top: 15px;
+	}
+}
+
+
+// News
+
+
+
+
+// Headers
+
+#home-wrapper h1 {
+	@include home-header;
+}
+
+
+// Featured Projects
+
+#projects-carousel {
+	.teaser-wrapper {
+	  height: 264px;
+	  position: relative;
+    text-align: center;
+	}
+	.image {
+	  position: absolute;
+	}
+	.title {
+		color: #fff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	.title,
+	.view-details {
+		display: none;
+	}
+	.view-details {
+		@include orange-button;
+	}
+	.overlay {
+		height: 100%;
+		position: absolute;
+	  width: 100%;
+	}
+	.overlay-content {
+	  position: absolute;
+	  text-align: center;
+	  top: 35%;
+	  width: 100%;
+	}
+}
+
+
+// Featured Projects: Hover Styles
+
+#projects-carousel {
+	.teaser-wrapper:hover {
+		.overlay {
+			background: rgba(0,0,0,0.8);
+		}
+		.title,
+		.view-details {
+			display: block;
+		}
+	}
+}
+
+
+// Testimonials
+
+#testimonials-carousel {
+	position: relative;
+	.testimonial {
+		.quote {
+			color: #fff;
+			font-family: 'Roboto', sans-serif;
+			font-size: 24px;
+			font-style: italic;
+			font-weight: 300;
+			padding: 0 15%;
+		  -webkit-justify-content: center;
+		  -ms-justify-content: center;
+		  justify-content: center;
+		  display: -ms-flex;
+		  display: -webkit-flex;
+		  display: flex;
+		  -ms-flex-direction: column;
+		  -webkit-flex-direction: column;
+		  flex-direction: column;
+		  height: 100%;
+		  position: absolute;
+		  z-index: 1;
+		}
+		.credit {
+			font-size: 16px;
+		}
+		.testimonial-link {
+			display: block;
+			text-align: center;
+		}
+	}
+	.slick-dots {
+	  top: 30px;
+	  li.slick-active button:before {
+		  color: $orange;
+		  opacity: 1;
+		}
+		li button {
+			&:before {
+				color: #fff;
+			  font-size: 12px;
+				opacity: 1;
+			}
+			&:hover:before {
+				opacity: 0.75;
+			}
+		}
+	}
+}
