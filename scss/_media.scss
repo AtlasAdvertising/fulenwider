@@ -9,3 +9,16 @@
 	display: inline-block;
 	text-align: center;
 }
+
+
+// News List
+
+.media-column-wrapper #news-list {
+	padding: 0;
+	li a {
+		color: $orange;
+		&:hover {
+			color: $orange-hover;
+		}
+	}
+}

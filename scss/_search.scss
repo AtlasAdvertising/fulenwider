@@ -59,3 +59,43 @@
 		cursor: pointer; 
 	}
 }
+
+
+// Search Template
+
+// Search Results
+
+.SearchDialog {
+	margin-top: 35px;
+}
+
+.SearchResults {
+  margin-top: 35px;
+  a {
+  	color: $orange;
+  	&:hover {
+  		color: $orange-hover;
+  	}
+  }
+}
+
+input#p_lt_wpzPagePlaceholder_pageplaceholder_p_lt_wpzSearchResults_SearchDialogWithResults_srchDialog_btnSearch {
+	@include orange-button;
+  border-radius: 2px;
+  border: none;
+  display: block;
+  font-size: 19px;
+  margin: 10px 0 15px;
+  max-width: 100%;
+  padding: 2px 0;
+  width: 150px;
+}
+
+select#p_lt_wpzPagePlaceholder_pageplaceholder_p_lt_wpzSearchResults_SearchDialogWithResults_srchDialog_drpSearchMode {
+  width: 100%;
+  height: 100%;
+}
+
+#p_lt_wpzPagePlaceholder_pageplaceholder_p_lt_wpzSearchResults_SearchDialogWithResults_srchDialog_pnlDialog td {
+  height: 35px;
+}

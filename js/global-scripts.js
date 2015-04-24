@@ -26,7 +26,9 @@ $(document).ready(function() {
     //autoplay: true,
     //autoplaySpeed: 9000,
     arrows: true,
-    dots: true
+    dots: true,
+    prevArrow: '<button type="button" id="hero-prev">Prev</button>',
+    nextArrow: '<button type="button" id="hero-next">Next</button>'
   });
 
   // ========================================================
@@ -35,8 +37,8 @@ $(document).ready(function() {
   // ========================================================
 
   if ( $("#widget-wrapper").children("div").length > 0 ) {
-      $("#secondary-content").wrap("<div class='col-md-9 col-sm-12'></div>");
-      $("#widget-wrapper").wrap("<div class='col-md-3 col-sm-12'></div>");
+      $("#secondary-content").wrap("<div class='col-md-8 col-sm-12'></div>");
+      $("#widget-wrapper").wrap("<div class='col-md-4 col-sm-12'></div>");
   } else {
       $("#secondary-content").wrap("<div class='col-md-12 col-sm-12'></div>");
   }

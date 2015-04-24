@@ -7,10 +7,13 @@ header {
   	height: 95px;
   }
   .row {
-  	height: 95px;
+  	height: 75px;
+  	@include breakpoint(medium) {
+	  	height: 95px;
+	  }
   }
-  .col-xs-4,
-  .col-sm-8 {
+  .col-xs-9,
+  .col-sm-9 {
   	-webkit-align-items: center;
   	-ms-align-items: center;
 	  align-items: center;
@@ -21,6 +24,17 @@ header {
   }
   .col-sm-8 {
 
+  }
+}
+
+
+// Logo
+
+#site-logo img {
+  max-height: 45px;
+  max-width: 100%;
+  @include breakpoint(large) {
+    max-height: none;
   }
 }
 
@@ -47,4 +61,48 @@ a.goog-te-menu-value {
 #google_translate_element { 
   position: absolute;
   top: -4px;
+}
+
+
+// Sticky Header
+header.stick {
+  position: fixed;
+  top: 0px;
+  height: 75px;
+  left: 0px;
+  width: 100%;
+  z-index: 100000;
+  @include breakpoint(medium) {
+    height: 95px;
+  }
+  .row {
+    height: 75px;
+    @include breakpoint(medium) {
+      height: 95px;
+    }
+  }
+  #utility-wrapper {
+    // visibility: hidden;
+    top: -25px;
+  }
+  #site-logo {
+    a {
+      height: 45px;
+      width: 135px;
+      background: url("/Energize/images/sticky-logo.png") no-repeat;
+    }
+  }
+  #main-nav-wrapper {
+    height: 40px;
+  }
+  #nav-wrapper {
+    height: 75px;
+  }
+  .mobileBtn {
+    top: 18px;
+  }
+}
+
+#navPlaceHolder {
+  height: 75px !important;
 }

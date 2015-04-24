@@ -1,6 +1,28 @@
 // Widgets
 
 
+#widget-wrapper {
+  background: #f1f4f5;
+  padding: 25px 50px 50px;
+}
+
+
+// Links
+
+#widget-wrapper a {
+	color: $orange;
+	&:hover {
+		color: $orange-hover;
+	}
+}
+
+.LinksList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
 // Headers
 
 #widget-wrapper .widget-block h2,
@@ -49,4 +71,18 @@
 
 #widget-wrapper .local-image a {
   display: block;
+}
+
+
+// Connect With Us
+
+.Controls {
+	i.fa {
+		color: $orange;
+		cursor: pointer;
+		font-size: 28px;
+		&:hover {
+			color: $orange-hover;
+		}
+	}
 }

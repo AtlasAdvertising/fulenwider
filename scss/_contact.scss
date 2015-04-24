@@ -129,6 +129,8 @@
 	}
 	.FormButton {
 		@include orange-button;
+		border: 0;
+		outline: 0;
 	}
 }
 
@@ -138,4 +140,21 @@ input[type="text"]{
 
 input[type="text"]{
   min-width: 40px;
+}
+
+.OfficeAddress.col-sm-6 {
+  padding-left: 0;
+}
+
+input.invalid-input {
+  border-color: rgba(238, 42, 36, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6);
+  box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6);
+}
+
+span.required {
+	color: red;
 }

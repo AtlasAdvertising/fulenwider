@@ -4,6 +4,7 @@
 footer {
 	background: $header-blue;
 	color: $grey;
+	font-family: 'Roboto', sans-serif;
 	padding: 50px 0;
 	a {
 		color: $light-grey;
@@ -16,15 +17,20 @@ footer {
 // Sitemap
 
 ul.CMSSiteMapList {
-	font-family: 'Roboto', sans-serif;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	ul {
 		display: none;
 	}
+	li {
+		margin-bottom: 5px;
+	}
 	a {
-		color: $light-grey;
+		color: $light-periwinkle;
+		&:hover {
+			color: #fff;
+		}
 	}
 }
 
@@ -32,17 +38,58 @@ ul.CMSSiteMapList {
 // News
 
 #footer-news-list {
-	font-family: 'Roboto', sans-serif;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	.fa-rss {
 		display: none;
 	}
-	a {
+	.news-item {
+	  margin-bottom: 15px;
+	}
+	.date {
 		color: $periwinkle;
+		font-style: italic;
+		font-weight: 300;
+	}
+	a {
+		color: $light-periwinkle;
 		&:hover {
 			color: $light-grey;
+		}
+	}
+}
+
+
+// Office Info
+
+footer {
+	.contact-wrapper {
+		color: $periwinkle;
+	}
+	.contact-wrapper a,
+	.office-name {
+		color: $light-periwinkle;
+		font-weight: 500;
+	}
+	.contact-wrapper a:hover {
+		color: #fff;
+	}
+	.office-address {
+	  margin-bottom: 10px;
+	}
+}
+
+
+// Copyright
+
+#copyright {
+	color: $periwinkle;
+	margin-top: 10px;
+	a {
+		color: $light-periwinkle;
+		&:hover {
+			color: #fff;
 		}
 	}
 }

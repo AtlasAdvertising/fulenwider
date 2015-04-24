@@ -40,6 +40,10 @@
 	ol {}
 }
 
+#secondary-wrapper img {
+	max-width: 100%;
+}
+
 
 // Page Wrapper
 
@@ -72,6 +76,9 @@
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		padding: 7px 2px 8px 1px;
+		&:hover {
+			color: $orange-hover;
+		}
 		&:after {
 			content: "::";
 			padding: 0 5px;
@@ -81,6 +88,9 @@
 		}
 		a {
 			color: $orange;
+			&:hover {
+				color: $orange-hover;
+			}
 		}
 	}
 	#Utility_Share:after {
